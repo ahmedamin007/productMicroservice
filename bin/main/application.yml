@@ -1,0 +1,20 @@
+server.port: 8001
+
+spring.devtools.restart.exclude: META-INF/maven/,META-INF/resources/,resources/,public/,templates/,**/Test.class,*/Tests.class,git.properties,META-INF/build-info.properties*
+
+
+spring.data.mongodb:
+  host: localhost
+  port: 27017
+  database: product-db
+  
+logging:
+  level:
+    root: INFO
+    com.microservices: DEBUG
+
+---
+spring.profiles: docker
+
+server.port: 8080
+   
